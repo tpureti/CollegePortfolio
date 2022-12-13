@@ -1,0 +1,223 @@
+/* CSS DOCUMENT */
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+:root {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  --dark-grey: #23272E;
+  --med-grey: #282C34;
+  --grey: #5c6370;
+  --light-grey: #818896;
+  --lighter-grey: #ABB2BF;
+  --purple: #C678DD;
+  --blue: #61AEEE;
+  --red: #E06C75;
+  --green: #98c379;
+  --orange: #D19A66;
+  --cyan: #56b6c2;
+}
+
+/* RESET */
+*,
+*::before,
+*::after,
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* GENERAL */
+body {
+  background: var(--dark-grey);
+  color: var(--lighter-grey);
+}
+
+h1 {
+  color: var(--red);
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+nav {
+  max-width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px var(--med-grey) solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#logo {
+  color: var(--purple);
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.navlinks {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: right;
+}
+
+.navlinks a {
+  color: var(--blue);
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+h2 {
+  text-align: center;
+  color: var(--orange);
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+main {
+  max-width: 60rem;
+  margin: auto;
+}
+
+section {
+  height: 100vh;
+  background: var(--med-grey);
+  padding: 2rem;
+  margin: 1rem;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#intro p {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 5rem;
+  text-align: justify;
+}
+
+.pfp img {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  background: var(--dark-grey);
+}
+
+.icon {
+  text-align: center;
+}
+
+.icon img {
+  width: 5rem;
+}
+
+h3 {
+  color: var(--green);
+  font-family: "Lora", serif;
+  font-size: 1.75rem;
+}
+
+.allskills {
+  margin: auto;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lang {
+  display: block;
+  padding: 1rem;
+}
+
+.skills img {
+  width: auto;
+  height: 7rem;
+  padding: 1rem;
+  margin: 0.5rem 2rem;
+  display: inline-block;
+  background-color: var(--dark-grey);
+}
+
+.projectarea {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.project {
+  width: 20rem;
+  margin: 1rem;
+}
+
+.project h3 {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.preview {
+  background-size: cover;
+  text-align: center;
+}
+
+.preview a {
+  font-family: "Lora", serif;
+  font-weight: bold;
+  color: var(--cyan);
+  text-transform: lowercase;
+  margin: 0.5rem;
+}
+
+.preview a:hover {
+  color: var(--light-grey);
+}
